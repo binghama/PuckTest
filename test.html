@@ -194,7 +194,7 @@ data.forEach(function(dataArray, index) {
 
 var diff_time = dataArray[0].getTime()-start_time;
 
-dataString = diff_time.toFixed(0) + ',' + dataArray[1].toFixed(3);
+dataString = diff_time + ',' + dataArray[1];
 
 csvContent += index < data.length ? dataString + '\n' : dataString;
 
